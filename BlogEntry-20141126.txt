@@ -1,0 +1,28 @@
+Project Ideas: Wash and Consultant Tree Map
+
+  In the last few days, I've struggled to work on any particular project. This has happened because I haven't been keeping my projects on a USB drive that I'm supposed to carry with me everywhere. And when I arrive home, I'm usually too tired to concentrate that hard on creation. So here I am, on the train again, trying to develop python code without any real purpose and no internet connection, making it doubly hard to push myself to work. I put about half an hour of time in and now I've changed to writing this as prose seem to be an easier thing to handle when I'm tired.
+
+  For this post, I'm going to outline the projects I've thought up and dig a little deeper into what I've done and some generalizations on what I can do to finish them.
+
+  Project Ideas
+    Wash
+    Consultant Tree Map
+    Hockey Analysis & Forecasting
+    Ender's Gun
+    Alternative Battleship
+    Alternative SKU Forecast
+
+  Wash is a program for work that I'll use to make one of my scripts from work more user-friendly. Currently our new system outputs the consultant IDs as numbers rather than as a string or some other key. This is rather annoying in a delimited text file because it adds commas to their IDs making it that much harder to parse. Also, some of my previous work in Access for a couple of projects requires that data text files must be delimited with commas or else the file won't be imported. Since I've automated those projects to be a click of a button and then wait for it to finish, it has made those programs essentially non-functional without some sort of data manipulation prior to the file being uploaded.
+
+  It doesn't bother me too much that I wrote a script (that I pretty much stole from the internet) that's in python. I know how it works and how to run it and why it would break. But my boss now needs access to the python script as well because she's dealing with the same problem I am. While she can follow the instructions I gave her, I think it would be easier for her if I had a GUI that walked her through the process.
+
+  Thus the idea of Wash was born. I call it Wash because I'm "washing" the text file. Wash will be a GUI built from Tkinter that walks a user through the process of selecting a file and a folder to output the data in. It will also handle issues where the file is already delimited in commas. I basically want a program that will ask the user where the file is, ask the user what the delimiter they would like is, and ask them where they would like to export the data to.
+
+  Wash should be an uncomplicated program in terms of processing the data, but I don't have any experience with GUI programming and so this practice will be to learn Tkinter.
+
+  Consultant Tree Map is another work project. It manifested itself from a now dead project and has almost no utility other than it's a complicated challenge that helps me learn more about the built in types in python(lists, dictionaries and now shelves). This project will build a map of a consultant's direct supervisor and then calculate some other data to output maintenance achievements over a 14 month period. I've completed a major portion of it, although I haven't fixed the bugs yet. I really need another push to actually finish this.
+
+  rules requirements
+  An NVP is directly under an ENVP and that ENVP stays around until the ENVP is demoted.
+  If the ENVP is demoted, the NVP becomes directly under the ENVP above the demoted NVP.
+  If an RVP is promoted, they fall under the NVP who promoted them. That NVP becomes their ENVP.
